@@ -39,6 +39,68 @@
             margin-top: 0rem !important;
             margin-bottom: 0rem !important;
         }
+
+
+        .nav-link {
+
+            border: 1px solid #ccc;
+            border-radius: 0px !important;
+            margin: 1px !important;
+
+        }
+
+        .Consulta {
+
+            color: #FFF;
+            background-color: #007bff;
+        }
+
+        .Reclamo {
+
+            color: #FFF;
+            background-color: #fd7e14;
+        }
+
+        .Sugerencia {
+
+            color: #FFF;
+            background-color: #20c997;
+        }
+
+        .Cotizacion {
+
+            color: #FFF;
+            background-color: #17a2b8;
+        }
+
+        .active {
+            background-color: inherit;
+        }
+        .f1{
+            margin-top:-15px;
+            color:#FFF;
+            padding: 10px 15px 10px 15px;
+            background-color: #007bff;
+        }
+        .f2{
+            margin-top:-15px;
+            color:#FFF;
+            padding: 10px 15px 10px 15px;
+            background-color: #fd7e14;
+        }
+        .f3{
+            margin-top:-15px;
+            color:#FFF;
+            padding: 10px 15px 10px 15px;
+            background-color: #20c997;;
+        }
+        .f4{
+            margin-top:-15px;
+            color:#FFF;
+            padding: 10px 15px 10px 15px;
+            background-color: #17a2b8;
+        }
+
     </style>
 </head>
 
@@ -339,39 +401,235 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
-                            <div class="form-group">
-                                <label class="control-label" for="Nombre">Nombres</label>
-                                <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="width: 100%">
+                            <li class="nav-item text-center" style="width: 25%">
+                                <a class="nav-link Consulta active" id="pills-Consulta-tab" data-toggle="pill" href="#pills-Consulta" role="tab" aria-controls="pills-Consulta"
+                                    aria-selected="true">Consulta</a>
+                            </li>
+                            <li class="nav-item text-center" style="width: 25%">
+                                <a class="nav-link Reclamo" id="pills-Reclamo-tab" data-toggle="pill" href="#pills-Reclamo" role="tab" aria-controls="pills-Reclamo"
+                                    aria-selected="false">Reclamo</a>
+                            </li>
+                            <li class="nav-item text-center" style="width: 25%">
+                                <a class="nav-link Sugerencia" id="pills-Sugerencia-tab" data-toggle="pill" href="#pills-Sugerencia" role="tab" aria-controls="pills-Sugerencia"
+                                    aria-selected="false">Sugerencia</a>
+                            </li>
+                            <li class="nav-item text-center" style="width: 25%">
+                                <a class="nav-link Cotizacion" id="pills-Cotizacion-tab" data-toggle="pill" href="#pills-Cotizacion" role="tab" aria-controls="pills-Cotizacion"
+                                    aria-selected="false">Cotizacion</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active f1" id="pills-Consulta" role="tabpanel" aria-labelledby="pills-Consulta-tab">
+
+                               <h5><strong>Consulta</strong></h5>
+                               <br> 
+                                <div class="form-group row">
+                                    <label for="2" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="2" placeholder="Nombre completo">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="3" class="col-sm-2 col-form-label col-form-label-sm">Rut</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="3" placeholder="Ej: 12.345.678-9">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="4" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="4" placeholder="correo@ejemplo.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="5" class="col-sm-2 col-form-label col-form-label-sm">Telefono:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="5" placeholder="99887766">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="6" class="col-sm-2 col-form-label col-form-label-sm">Region:</label>
+                                    <div class="col-sm-10">
+                                        <select id="6" name="region" class="form-control form-control-sm">
+                                            <option value="">Seleccione Región</option>
+                                            <option value="108755/RM">RM</option>
+                                            <option value="108743/I">I</option>
+                                            <option value="108744/II">II</option>
+                                            <option value="108745/III">III</option>
+                                            <option value="108746/IV">IV</option>
+                                            <option value="108747/V">V</option>
+                                            <option value="108748/VI">VI</option>
+                                            <option value="108749/VII">VII</option>
+                                            <option value="108750/VIII">VIII</option>
+                                            <option value="108751/IX">IX</option>
+                                            <option value="108752/X">X</option>
+                                            <option value="108753/XI">XI</option>
+                                            <option value="108754/XII">XII</option>
+                                            <option value="108761/XIV">XIV</option>
+                                            <option value="108762/XV">XV</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label" for="Motivo">Motivo de Contacto</label>
-                                <select name="Motivo" class="form-control">
-                                    <option value="Consulta General">Consulta General</option>
-                                    <option value="Realizar Pedido">Realizar Pedido</option>
-                                    <option value="Informe un problema">Informe un problema</option>
-                                </select>
+                            <div class="tab-pane fade f2" id="pills-Reclamo" role="tabpanel" aria-labelledby="pills-Reclamo-tab">
+                                    <h5><strong>Reclamo</strong></h5> 
+                                    <br> 
+                                    <div class="form-group row">
+                                        <label for="2" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="2" placeholder="Nombre completo">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="3" class="col-sm-2 col-form-label col-form-label-sm">Rut</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="3" placeholder="Ej: 12.345.678-9">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="4" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="4" placeholder="correo@ejemplo.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="5" class="col-sm-2 col-form-label col-form-label-sm">Telefono:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="5" placeholder="99887766">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="6" class="col-sm-2 col-form-label col-form-label-sm">Region:</label>
+                                        <div class="col-sm-10">
+                                            <select id="6" name="region" class="form-control form-control-sm">
+                                                <option value="">Seleccione Región</option>
+                                                <option value="108755/RM">RM</option>
+                                                <option value="108743/I">I</option>
+                                                <option value="108744/II">II</option>
+                                                <option value="108745/III">III</option>
+                                                <option value="108746/IV">IV</option>
+                                                <option value="108747/V">V</option>
+                                                <option value="108748/VI">VI</option>
+                                                <option value="108749/VII">VII</option>
+                                                <option value="108750/VIII">VIII</option>
+                                                <option value="108751/IX">IX</option>
+                                                <option value="108752/X">X</option>
+                                                <option value="108753/XI">XI</option>
+                                                <option value="108754/XII">XII</option>
+                                                <option value="108761/XIV">XIV</option>
+                                                <option value="108762/XV">XV</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                             </div>
-                            <div class="form-group">
-                                <label class="control-label" for="Empresa">Empresa</label>
-                                <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required
-                                />
+                            <div class="tab-pane fade f3" id="pills-Sugerencia" role="tabpanel" aria-labelledby="pills-Sugerencia-tab">
+                                    <h5><strong>Sugerencia</strong></h5> 
+                                
+                                    <br> 
+                                    <div class="form-group row">
+                                        <label for="2" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="2" placeholder="Nombre completo">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="3" class="col-sm-2 col-form-label col-form-label-sm">Rut</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="3" placeholder="Ej: 12.345.678-9">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="4" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="4" placeholder="correo@ejemplo.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="5" class="col-sm-2 col-form-label col-form-label-sm">Telefono:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="5" placeholder="99887766">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="6" class="col-sm-2 col-form-label col-form-label-sm">Region:</label>
+                                        <div class="col-sm-10">
+                                            <select id="6" name="region" class="form-control form-control-sm">
+                                                <option value="">Seleccione Región</option>
+                                                <option value="108755/RM">RM</option>
+                                                <option value="108743/I">I</option>
+                                                <option value="108744/II">II</option>
+                                                <option value="108745/III">III</option>
+                                                <option value="108746/IV">IV</option>
+                                                <option value="108747/V">V</option>
+                                                <option value="108748/VI">VI</option>
+                                                <option value="108749/VII">VII</option>
+                                                <option value="108750/VIII">VIII</option>
+                                                <option value="108751/IX">IX</option>
+                                                <option value="108752/X">X</option>
+                                                <option value="108753/XI">XI</option>
+                                                <option value="108754/XII">XII</option>
+                                                <option value="108761/XIV">XIV</option>
+                                                <option value="108762/XV">XV</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                             </div>
-                            <div class="form-group">
-                                <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
-                                <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required
-                                />
+                            <div class="tab-pane fade f4" id="pills-Cotizacion" role="tabpanel" aria-labelledby="pills-Cotizacion-tab">
+                                    <h5><strong>Cotizacion</strong></h5> 
+                                
+                                    <br> 
+                                <div class="form-group row">
+                                    <label for="2" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="2" placeholder="Nombre completo">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="3" class="col-sm-2 col-form-label col-form-label-sm">Rut</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="3" placeholder="Ej: 12.345.678-9">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="4" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="4" placeholder="correo@ejemplo.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="5" class="col-sm-2 col-form-label col-form-label-sm">Telefono:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control form-control-sm" id="5" placeholder="99887766">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="6" class="col-sm-2 col-form-label col-form-label-sm">Region:</label>
+                                    <div class="col-sm-10">
+                                        <select id="6" name="region" class="form-control form-control-sm">
+                                            <option value="">Seleccione Región</option>
+                                            <option value="108755/RM">RM</option>
+                                            <option value="108743/I">I</option>
+                                            <option value="108744/II">II</option>
+                                            <option value="108745/III">III</option>
+                                            <option value="108746/IV">IV</option>
+                                            <option value="108747/V">V</option>
+                                            <option value="108748/VI">VI</option>
+                                            <option value="108749/VII">VII</option>
+                                            <option value="108750/VIII">VIII</option>
+                                            <option value="108751/IX">IX</option>
+                                            <option value="108752/X">X</option>
+                                            <option value="108753/XI">XI</option>
+                                            <option value="108754/XII">XII</option>
+                                            <option value="108761/XIV">XIV</option>
+                                            <option value="108762/XV">XV</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label" for="Mensaje">Mensaje</label>
-                                <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-primary" value="Enviar">
-                                <input type="reset" class="btn btn-default" value="Limpiar">
-                            </div>
-                            <div id="respuesta" style="display: none;"></div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
