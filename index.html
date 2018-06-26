@@ -37,33 +37,236 @@
                         <div class="card">
                             <div class="card-header" style="color:#FFF;background-color:#FE7F14 ">
 
-                                Datos Personales:
+                                Datos Personales
                             </div>
                             <div class="card-body">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Nombre</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Rut</label>
-                                    <small id="emailHelp" class="form-text text-muted">Ej 12.345.678-9</small>
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Rut">
-                                </div>
-
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Rut:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail" placeholder="Ej: 12.345.678-9">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Telefono:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail" placeholder="Ej: 88776655">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail" placeholder="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Region:</label>
+                                        <div class="col-sm-10">
+                                            <select id="inputRegion" name="region" class="form-control">
+                                                <option value="">Seleccione Región</option>
+                                                <option value="108755/RM">RM</option>
+                                                <option value="108743/I">I</option>
+                                                <option value="108744/II">II</option>
+                                                <option value="108745/III">III</option>
+                                                <option value="108746/IV">IV</option>
+                                                <option value="108747/V">V</option>
+                                                <option value="108748/VI">VI</option>
+                                                <option value="108749/VII">VII</option>
+                                                <option value="108750/VIII">VIII</option>
+                                                <option value="108751/IX">IX</option>
+                                                <option value="108752/X">X</option>
+                                                <option value="108753/XI">XI</option>
+                                                <option value="108754/XII">XII</option>
+                                                <option value="108761/XIV">XIV</option>
+                                                <option value="108762/XV">XV</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="card-footer text-muted" style="background-color:#FE7F14 ">
 
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" style="color:#FFF;background-color:#FE7F14 ">
+                                Preferencias
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Propiedad:</label>
+                                    <div class="col-sm-10">
+                                        <select id="inputRegion" name="region" class="form-control">
+                                            <option value="">Seleccione tipo Propiedad</option>
+                                            <option value="108755/RM">Casa</option>
+                                            <option value="108743/I">Departamento</option>
+                                            <option value="108744/II">Sitio?</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Antiguedad:</label>
+                                    <div class="col-sm-10">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline1">Nueva</label>
+                                                  </div>
+                                                  <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline2">Usada</label>
+                                                  </div>  
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Valor(UF):</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="staticEmail" placeholder="Ej: 123">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Credito(UF): <small class="text-muted"></small> </label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="staticEmail" placeholder="Ej: 123  ">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Comuna:</small> </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail" placeholder="Ej: Santiago ">
+                                        </div>
+                                    </div>
+                            </div>
+     
+                        </div>
+                        <div class="card">
+                            <div class="card-header" style="color:#FFF;background-color:#FE7F14 ">
+                                Mensaje
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Detalle:</label>
+                                        <div class="col-sm-10">
+                                            <select id="inputRegion" name="region" class="form-control">
+                                                <option value="">Seleccione Detalle</option>
+                                                <option value="84913/Consulta">Consulta</option>
+                                                <option value="84912/Reclamo">Reclamo</option>
+                                                <option value="84914/Sugerencia">Sugerencia</option>
+                                                <option value="108760/Cotización">Cotización</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Comentario</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Contact us</legend>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">
+                                            <i class="fa fa-user bigicon"></i>
+                                        </span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">
+                                            <i class="fa fa-user bigicon"></i>
+                                        </span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">
+                                            <i class="fa fa-envelope-o bigicon"></i>
+                                        </span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">
+                                            <i class="fa fa-phone-square bigicon"></i>
+                                        </span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">
+                                            <i class="fa fa-pencil-square-o bigicon"></i>
+                                        </span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days."
+                                                rows="7"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+                            <div class="form-group">
+                                <label class="control-label" for="Nombre">Nombres</label>
+                                <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                                <select name="Motivo" class="form-control">
+                                    <option value="Consulta General">Consulta General</option>
+                                    <option value="Realizar Pedido">Realizar Pedido</option>
+                                    <option value="Informe un problema">Informe un problema</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Empresa">Empresa</label>
+                                <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+                                <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Mensaje">Mensaje</label>
+                                <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary" value="Enviar">
+                                <input type="reset" class="btn btn-default" value="Limpiar">
+                            </div>
+                            <div id="respuesta" style="display: none;"></div>
+                        </form>
+                    </div>
                 </div>
 
 
