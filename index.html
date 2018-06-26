@@ -22,7 +22,7 @@
         .form2 {
             background: none repeat scroll 0 0 #F3F3F3;
             color: #1d5bb9;
-            border: 1px solid #7B7B7B;
+            border: 1px solid #c3c3c3;
             padding: 5px;
         }
 
@@ -267,22 +267,25 @@
                                 <div class="form-group form-group2 col-md-6 col-sm-6">
                                     <label for="inputEmail4" class="col-form-label-sm col-form-label-sm2">Tipo Propiedad</label>
                                     <select id="inputRegion" name="region" class="form-control form-control-sm">
-                                            <option value="">Seleccione Región</option>
-                                            <option value="108755/RM">Casa</option>
-                                            <option value="108743/I">Departamento</option>
-                                            <option value="108744/II">Sitio</option>
-            
-                                        </select>                                </div>
+                                        <option value="">Seleccione Región</option>
+                                        <option value="108755/RM">Casa</option>
+                                        <option value="108743/I">Departamento</option>
+                                        <option value="108744/II">Sitio</option>
+
+                                    </select>
+                                </div>
                                 <div class="form-group form-group2 col-md-6 col-sm-6">
-                                    <label for="inputPassword4" class="col-form-label-sm col-form-label-sm2">Antiguedad</label><br>
+                                    <label for="inputPassword4" class="col-form-label-sm col-form-label-sm2">Antiguedad</label>
+                                    <br>
                                     <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input form-control-sm">
-                                            <label class="custom-control-label" for="customRadioInline1">Nueva</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input form-control-sm">
-                                            <label class="custom-control-label" for="customRadioInline2">Usada</label>
-                                        </div>                                </div>
+                                        <input type="radio" id="customRadioInline11" name="customRadioInline11" class="custom-control-input form-control-sm">
+                                        <label class="custom-control-label" for="customRadioInline11">Nueva</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline23" name="customRadioInline11" class="custom-control-input form-control-sm">
+                                        <label class="custom-control-label" for="customRadioInline23">Usada</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group form-group2 col-md-6 col-sm-6">
@@ -301,38 +304,39 @@
                                 </div>
                                 <div class="form-group form-group2 col-md-6 col-sm-6">
                                     <label for="inputPassword4" class="col-form-label-sm col-form-label-sm2">Fecha entrega</label>
-                                    <input type="date" class="form-control form-control-sm" id="inputPassword4" >
+                                    <input type="date" class="form-control form-control-sm" id="inputPassword4">
                                 </div>
                             </div>
                             <br>
                             <h6>Mensaje</h6>
                             <hr class="hr">
                             <div class="form-group form-group2">
-                                    <label for="inputAddress" class="col-form-label-sm col-form-label-sm2">Detalle</label>
-                                    <select id="inputRegion" name="region" class="form-control form-control-sm">
-                                            <option value="">Seleccione Detalle</option>
-                                            <option value="84913/Consulta">Consulta</option>
-                                            <option value="84912/Reclamo">Reclamo</option>
-                                            <option value="84914/Sugerencia">Sugerencia</option>
-                                            <option value="108760/Cotización">Cotización</option>
-                                        </select>
-                                </div>
+                                <label for="inputAddress" class="col-form-label-sm col-form-label-sm2">Detalle</label>
+                                <select id="inputRegion" name="region" class="form-control form-control-sm">
+                                    <option value="">Seleccione Detalle</option>
+                                    <option value="84913/Consulta">Consulta</option>
+                                    <option value="84912/Reclamo">Reclamo</option>
+                                    <option value="84914/Sugerencia">Sugerencia</option>
+                                    <option value="108760/Cotización">Cotización</option>
+                                </select>
+                            </div>
                             <div class="form-row">
-                                    <div class="form-group form-group2 col-md-6 col-sm-6">
-                                        <label for="inputEmail4" class="col-form-label-sm col-form-label-sm2">Mensaje</label>
-                                        <textarea  class="form-control form-control-sm" id="inputEmail4" placeholder="Ej: 123"></textarea>
-                                    </div>
-                                    <div class="form-group form-group2 col-md-6 col-sm-6">
-                                        <br>
-                                            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld9dQ0UAAAAAGPh1ViLQg9BJNMq7UAY0KT8F5Ct&amp;co=aHR0cHM6Ly93d3cuc2VjdXJpdHlwcmluY2lwYWwuY2w6NDQz&amp;hl=es-419&amp;v=v1528855115741&amp;size=normal&amp;cb=aqerym2po764"
-                                            role="presentation" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                                            width="304" height="78" frameborder="0"></iframe>                                    </div>
+                                <div class="form-group form-group2 col-md-6 col-sm-6">
+                                    <label for="inputEmail4" class="col-form-label-sm col-form-label-sm2">Mensaje</label>
+                                    <textarea class="form-control form-control-sm" id="inputEmail4" placeholder="Ej: 123"></textarea>
                                 </div>
+                                <div class="form-group form-group2 col-md-6 col-sm-6">
+                                    <br>
+                                    <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld9dQ0UAAAAAGPh1ViLQg9BJNMq7UAY0KT8F5Ct&amp;co=aHR0cHM6Ly93d3cuc2VjdXJpdHlwcmluY2lwYWwuY2w6NDQz&amp;hl=es-419&amp;v=v1528855115741&amp;size=normal&amp;cb=aqerym2po764"
+                                        role="presentation" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                                        width="304" height="78" frameborder="0"></iframe>
+                                </div>
+                            </div>
                         </div>
                         <div class=" text-center mt-2" style="color:#FFF;">
-                                <button class="btn btn-default btn-sm mr-3" style="background-color:  #9FDDDC">Limpiar</button>
-                                <button class="btn btn-default btn-sm" style="background-color: #5488D9;color:#FFF;">Enviar</button>
-                            </div>
+                            <button class="btn btn-default btn-sm mr-3" style="background-color:  #9FDDDC">Limpiar</button>
+                            <button class="btn btn-default btn-sm" style="background-color: #5488D9;color:#FFF;">Enviar</button>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
